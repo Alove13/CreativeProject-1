@@ -1,0 +1,42 @@
+body {
+    background-color: purple;
+}
+
+#centeredContent {
+    background-color: lightblue;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+    
+}
+.fixedSideNav {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+.fixedMenu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 20%;
+    height: 6%;
+    background-color: darkslategrey;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fixedMenu a {
+    display: inline-block;
+    float: left;
+    color: white;
+    font-size: 13px;
+    padding: 10px 10px;
+    text-align: center;
+}
+.Paragraphs {
+    letter-spacing: 2px;
+    text-align: justify;
+    max-width: 400px;
+    margin: auto;
+    line-height: 150%; 
+}
