@@ -1,0 +1,47 @@
+@font-face {
+}
+html,body{
+  pading: 0;
+  margin: 0;
+}
+#header {
+  background-color: #494651;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  top: 0;
+  text-align: left;
+  /*vertical-align: middle; */
+  justify-content: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #d80700;
+  }
+
+#content{
+  background-color: white;
+  margin: 0 auto;
+  position: sticky;
+  top: 50;
+  width: 80%;
+  height: 80%;
+  box-shadow 20 20;
+}
+
+
+h1 {
+}
+body {
+  background-color: #C0C1C4;
+   /*#D0D8EA;*/
+}
+div {
+}
+p {
+}
+ul {
+}

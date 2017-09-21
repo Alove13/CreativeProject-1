@@ -1,55 +1,79 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="myStyleSheet.css"> 
+        <link rel="stylesheet" type="text/css" href="myStyleSheet.css">
         <meta name="viewport" content="width=device-width">
     </head>
-    <body>  
-    
-        <div class="InstructionsWindow">
+    <body>
+
+        <!-- <div class="InstructionsWindow">
             <p>First click on the Video to see our live Demo</p>
             <p>Scroll to see the fixed menu and nav bar button</p>
             <p>Use the menu to navigate pages</p>
-            <p>Use the nav bar to change settings, 
+            <p>Use the nav bar to change settings,
                 see cool things and help navigate the main page</p>
-        </div>
-    
-        <div class="fixedMenu"> 
-            <h3> <a href="file:///C:/Users/aaron/Documents/CreativeActivity1/templates/tutorials.html">
-            HoloLens Tutorials</a></h3>
-            <h3> <a href="file:///C:/Users/aaron/Documents/CreativeActivity1/templates/coolMedia.html">
-            HoloLens Media</a></h3>
-            <h3> <a href="file:///C:/Users/aaron/Documents/CreativeActivity1/templates/survey.html">
-            HoloLens Survey</a></h3>
-        </div>
+        </div> -->
+
+        <div class="fixedMenu">
+            <a href="tutorials.html">
+              <button id="navButton"> HoloLens Tutorials </button></a>
+            <a href="coolMedia.html">
+            <button id="navButton"> HoloLens Media </button></a>
+            <a href="survey.html">
+            <button id="navButton"> HoloLens Survey </button></a>
 
             <div class="fixedSideNav">
-                <h3>Settings</h3>
-                <button>Toggle Night Vision</button>
-                <button>Toggle Fancy Borders</button>
-                <button>Toggle Font Size</button>
-                <button>See Instructions Again</button>
 
-                <h3>Jump to a Part in the Page</h3>
-                <ul>
-                    <li>Jump to the Top</li>
-                    <li>Jump to the Brief Intro to HoloLens</li>
-                    <li>Jump to the Bottom</li>
-                </ul>
+              <div class="dropdown">
+                <button onclick="showSettings()" class="dropbutton" id="navButton">Settings</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <button>Toggle Night Vision</button>
+                  <button>Toggle Fancy Borders</button>
+                  <button>Toggle Font Size</button>
+                  <button>See Instructions Again</button>
+                </div>
+              </div>
+        </div>
+
+
+
+              <!-- <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function showSettings() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbutton')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+              </script> -->
+
             </div>
-          
+
           <div id="centeredContent">
 
             <h1 class="Headers">Welcome to Augmented Reality!</h1>
 
-            <video controls autoplay name="media">        
-                <source src="https://192.168.252.73/api/holographic/stream/live_high.mp4?holo=true&pv=true&mic=true&loopback=true" 
-                    type="video/mp4">    
+            <video controls autoplay name="media">
+                <source src="https://10.37.143.168/api/holographic/stream/live_high.mp4?holo=true&pv=true&mic=true&loopback=true"
+                    type="video/mp4">
             </video>
-            
+
             <h2 class="Headers">Brief Intro to HoloLens</h2>
 
-            <p class="Paragraphs">HoloLens is a Augmented Reality Head Mount Display (HMD) produced by Microsoft. 
-                It enables the user to still be present in the real world, 
+            <p class="Paragraphs">HoloLens is a Augmented Reality Head Mount Display (HMD) produced by Microsoft.
+                It enables the user to still be present in the real world,
                 while bringing the virtual world into theirs!
             </p>
 
@@ -67,10 +91,10 @@
             <h3 class="Headers">Contact Information:</h1>
             <p class="Paragraphs">Nathaniel Wilcox: .....</p>
             <p class="Paragraphs">Aaron Love .....</p>
-            
+
 
 
           </div>
-    
+
     </body>
 </html>
