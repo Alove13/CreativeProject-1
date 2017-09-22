@@ -1,9 +1,7 @@
-
 html,body{
   pading: 0;
   margin: 0;
-  background-color: lightgray;
-  /*background-image: url("wallpaper/blue.jpg");*/
+  background-color: #d6cdd8;
   font-family: sans-serif;
 }
 
@@ -13,7 +11,6 @@ html,body{
   border: none;
   /*border-radius: 5px;*/
   margin-right: 10px;
-  margin-left: 10px;
   position: relative;
   float: left;
   top: 10px;
@@ -31,20 +28,10 @@ html,body{
     max-width: 700px;
     /*height: 80%*/
     margin: auto;
-    position: relative;
-    top: 70px;
+    margin-top: 70px;
     padding: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+    box-shadow: 0 0 1px 1px purple;
 
-#hideInstructions {
-  background-color: inherit;
-  border: none;
-  position: relative;
-  color: blue;
-  width: 160px;
-  margin-left: 20px;
-  margin-right:20px;
 }
 
 /* Dropdown Button */
@@ -60,12 +47,12 @@ html,body{
     position: relative;
     display: inline-block;
 }
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/*.show {display:block;}*/
 
-
-/*.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content{
     display: block;
-
-}*/
+}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -73,7 +60,7 @@ html,body{
     position: absolute;
     top: 80px;
     right: 20px;
-    height: 160px;
+    height: 225px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -96,8 +83,7 @@ html,body{
     top: 0px;
     width: 100%;
     height: 56px;
-    background-color: #2e3d56;
-    /*#0B2740;*/
+    background-color: #0B2740;
     /*darkslategrey;*/
     /*margin-top: 10px;
     margin-left: 10px;*/
@@ -109,8 +95,8 @@ html,body{
     font-size: 28px;
     font-family: sans-serif;
     /*padding: 10px 10px;*/
-    /*padding-left: 10px;
-    padding-right: 10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
 }
 .Paragraphs {
@@ -127,17 +113,18 @@ html,body{
   margin-right: 5%;
 }
 .InstructionsWindow{
-    display: inline;
-    background-color: white;
+    background-color: gainsboro;
     position: absolute;
     top: 100px;
     left: 20px;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 20%;
+    height: 20%;
   }
   .InstructionsWindow p{
       max-width: 140px;
-      margin:auto;
+      margin: auto;
+  }
+  #HololensPhoto{
+      width: 100%;
+      height: 60%;
   }
