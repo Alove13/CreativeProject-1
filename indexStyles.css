@@ -1,0 +1,108 @@
+
+html,body{
+  pading: 0;
+  margin: 0;
+  background-color: #d6cdd8;
+  font-family: sans-serif;
+}
+
+#navButton{
+  background-color: #124169;
+  /*border-color: blue;*/
+  border: none;
+  /*border-radius: 5px;*/
+  margin-right: 10px;
+  position: relative;
+  float: left;
+  top: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  box-shadow: 0 0 1px 1px #2176BF ;
+}
+
+#centeredContent {
+    background-color: white;
+    max-width: 700px;
+    /*height: 80%*/
+    margin: auto;
+    margin-top: 70px;
+    padding: 20px;
+    box-shadow: 0 0 1px 1px purple;
+
+}
+
+/* Dropdown Button */
+  /*.dropbutton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/*.show {display:block;}*/
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.fixedSideNav {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+.fixedMenu {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 56px;
+    background-color: #0B2740;
+    /*darkslategrey;*/
+    /*margin-top: 10px;
+    margin-left: 10px;*/
+}
+.fixedMenu a {
+    display: inline-block;
+    float: left;
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    /*padding: 10px 10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.Paragraphs {
+    letter-spacing: 2px;
+    text-align: justify;
+    /*max-width: 400px;*/
+    width: 90%;
+    margin: auto;
+    line-height: 150%;
+}
+.Headers {
+  /*width: 90%;*/
+  margin-left: 5%;
+  margin-right: 5%;
+}
