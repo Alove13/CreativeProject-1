@@ -2,16 +2,60 @@
     <head>
         <link rel="stylesheet" type="text/css" href="indexStyles.css">
         <meta name="viewport" content="width=device-width">
+        <script>
+          function showMenu(){
+            var x = document.getElementById('dropdownMenu');
+            if (x.style.display === 'none' || !x.style.display) {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+          }
+          function goNight(){
+            if (document.getElementById('centeredContent').style.backgroundColor == 'black'){
+              document.getElementById('centeredContent').style.backgroundColor = 'white';
+              document.getElementById('centeredContent').style.color = 'black';
+              document.body.style.backgroundColor = 'lightgray';
+            }
+            else{
+              document.getElementById('centeredContent').style.backgroundColor = 'black';
+              document.getElementById('centeredContent').style.color = 'white';
+              document.body.style.backgroundColor = 333333;
+            }
+          }
+          function hideInstructions(){
+            document.getElementById('iWindow').style.display = 'none';
+          }
+          function showInstructions(){
+            document.getElementById('iWindow').style.display = 'inline';
+          }
+          function showBorders(){
+            var x = document.getElementById('centeredContent').style;
+            if (x.borderStyle != 'inset'){
+              x.borderRadius = '10px';
+              x.borderWidth = 'thick';
+              x.borderStyle = 'inset';
+            }
+            else{
+                x.borderRadius = '0px';
+                x.borderWidth = 'normal';
+                x.borderStyle = 'none';
+            }
+          }
+        </script>
     </head>
     <body>
 
-        <div class="InstructionsWindow">
-          <p>INSTRUCTIONS:</p>  
+        <div class="InstructionsWindow" id="iWindow">
+          <p>INSTRUCTIONS:</p>
           <ol>
             <li>Scroll to see the fixed menu and nav bar button</li>
             <li>Use the menu to navigate pages</li>
             <li>Use the nav bar to change settings</li>
           </ol>
+          <button id="hideInstructions" onclick="hideInstructions()">
+            Hide Instructions Window
+          </button>
         </div>
 
         <div class="fixedMenu">
@@ -25,42 +69,17 @@
             <div class="fixedSideNav">
 
               <div class="dropdown">
-                <button class="dropbutton" id="navButton">Settings</button>
-                <div class="dropdown-content">
-                  <button>Toggle Night Vision</button>
-                  <button>Toggle Fancy Borders</button>
-                  <button>Toggle Font Size</button>
-                  <button>See Instructions Again</button>
+                <button onclick="showMenu()" class="dropbutton" id="navButton">Settings</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                  <button onclick="goNight()">Toggle Night Vision</button>
+                  <button onclick="showBorders()">Toggle Fancy Borders</button>
+                  <button onclick="showInstructions()">See Instructions Again</button>
                 </div>
               </div>
-        </div>
-
-
-
-              <!-- <script>
-            /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-            function showSettings() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            // Close the dropdown menu if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbutton')) {
-
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-              </script> -->
-
             </div>
+
+
+        </div>
 
           <div id="centeredContent">
 
@@ -87,7 +106,7 @@
             <h1 class="Headers">Nathaniel Wilcox</h1>
             <h1 class="Headers">and</h1>
             <h1 class="Headers">Aaron Love</h1>
-            
+
 
             <h3 class="Headers">Contact Information:</h1>
             <p class="Paragraphs">Nathaniel Wilcox: .....</p>
