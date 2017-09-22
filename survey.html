@@ -3,7 +3,13 @@
         <link rel="stylesheet" type="text/css" href="OtherPages.css"> 
         <meta name="viewport" content="width=device-width">
         <script>
-        
+                                  
+            function myFunction(){
+                var myName = document.getElementById("inputName").value;
+                var myThoughts = document.getElementById("inputThoughts").value;
+                document.getElementById("SubmittedName").innerHTML = myName; 
+                document.getElementById("SubmittedThoughts").innerHTML = myThoughts; 
+            }   
         </script>
     </head>
     <body>  
@@ -18,12 +24,17 @@
           </div>
           <div id="centeredContent">
 
-            <h1 class="Headers">Please Fill Out the Form Below and Click Submit!</h1>
-             <p class="Paragraphs">We would simply like to see what you think about our website, thanks!</p>
+                <h1 class="Headers">Please Fill Out the Form Below and Click Submit!</h1>
+                <p class="Paragraphs">We would simply like to see what you think about our website, thanks!</p>
 
-             <input id="inputName" type="text" value="YourName">
-             <input id="inputThoughts" type="text" value="YourThoughts">
-          </div>
+                <input id="inputName" type="text" value="YourName">
+                <input id="inputThoughts" type="text" value="YourThoughts">
+
+                <button onclick="myFunction()">Sumbit</button>
+                
+                <p id="SubmittedName"></p>
+                <p id="SubmittedThoughts"></p>
+            </div>
     
     </body>
 </html>
