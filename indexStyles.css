@@ -123,5 +123,9 @@ html,body{
   }
   .InstructionsWindow p{
       max-width: 140px;
-      margin:auto;
+      margin: auto;
+  }
+  #HololensPhoto{
+      width: 100%;
+      height: 60%;
   }
