@@ -113,3 +113,15 @@ html,body{
   margin-left: 5%;
   margin-right: 5%;
 }
+.InstructionsWindow{
+    background-color: gainsboro;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 20%;
+    height: 20%;
+  }
+  .InstructionsWindow p{
+      max-width: 140px;
+      margin:auto;
+  }
